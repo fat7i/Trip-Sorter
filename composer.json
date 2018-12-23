@@ -1,0 +1,18 @@
+{
+    "name": "fat7i/trip-sorter",
+    "authors": [
+        {
+            "name": "Mohamed Fathi",
+            "email": "fat7i.wp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TripSorter\\": "src/"
+        }
+    }
+}
