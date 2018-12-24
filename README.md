@@ -1,6 +1,4 @@
-# Trip sorter
-
-<img src="https://www.formsplus.co.uk/wp-content/uploads/2015/09/Boarding-pass-GREY-600x533-600x533.jpg" />	
+# Trip sorter	
 
 You	are	given	a	stack	of	boarding	cards	for	various	transportations	that	will	take	
 you	from	a	point	A	to	point	B	via	several	stops	on	the	way.	All	of	the	boarding	
