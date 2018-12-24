@@ -1,4 +1,6 @@
-# Trip sorter	
+# Trip sorter
+
+<img src="https://www.wildblueweddings.com/wp-content/uploads/2018/02/boarding-pass-save-the-date-card-destination-wedding-beach-travel-ticket-wedding-announcement-watercolor-tropical-map-plane-ticket-blue-5a8a2d32.jpg" />	
 
 You	are	given	a	stack	of	boarding	cards	for	various	transportations	that	will	take	
 you	from	a	point	A	to	point	B	via	several	stops	on	the	way.	All	of	the	boarding	
@@ -27,3 +29,28 @@ Baggage	will	we	automatically	transferred	from	your	last	leg.
 
 The	API	is	to	be	an	internal	PHP API	so	it	will	only	communicate	with	other	parts	
 of	a	PHP application,	not	server	to	server,	nor	server	to	client.		
+
+## Usage
+For usage please follow the sample in [src/Sample.php](src/Sample.php).
+
+    $sorter = new Sorter();
+    
+    $sorter->addCard([
+        'trip_type'   => 'flight',
+        'from'        => 'Stockholm',
+        'to'          => 'New York',
+        'trip_number' => 'SK22',
+        'seat'        => '7B',
+        'gate'        => '22',
+        'baggage'     => 'automatic',
+    ]);
+    
+    ...
+    
+    $sorter->sort();
+    
+    echo $sorter->display();
+
+## Have a Query?
+Mail me at [bin.fathi.ali@gmail.com](mailto:bin.fathi.ali@gmail.com).
+

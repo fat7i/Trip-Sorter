@@ -2,10 +2,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-//phpinfo();
 
 use TripSorter\Sorter;
 
@@ -56,7 +52,6 @@ echo "</pre>";
 
 
 //-- Display outputs as array of objects
-//echo "<hr />";
 //echo "<pre>";
 //print_r($sorter->output);
 //echo "</pre>";
