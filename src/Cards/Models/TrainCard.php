@@ -29,6 +29,8 @@ class TrainCard extends AbstractCard implements CardInterface
      */
     public function display(): string
     {
-        return 'Take train '. $this->trip_number .' from '. $this->from .' to '. $this->to .'. Sit in seat '. $this->seat .'.';
+        $str = "Take train %s from %s to %s. Sit in seat %s.";
+
+        return sprintf( $str, $this->trip_number, $this->from, $this->to, $this->seat);
     }
 }

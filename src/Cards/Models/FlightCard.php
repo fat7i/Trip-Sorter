@@ -32,12 +32,14 @@ class FlightCard extends AbstractCard implements CardInterface
      */
     public function display(): string
     {
-        $str = 'From '. $this->from .' Airport, take flight '. $this->trip_number .' to '. $this->to. '. Gate '. $this->gate .', seat '. $this->seat . ". \n";
+        $str = "From %s Airport, take flight %s to %s. Gate %s, seat %s. \nBaggage ";
 
         if ( $this->baggage !='automatic')
-            $str .= 'Baggage drop at ticket	counter	344';
+            $str .= "drop at ticket counter %s";
         else
-            $str .= 'Baggage will we automatically transferred from your last leg.';
+            $str .= "will we automatically transferred from your last leg.";
+
+        $str = sprintf( $str, $this->from, $this->trip_number, $this->to, $this->gate, $this->seat, $this->baggage);
 
         return $str;
     }

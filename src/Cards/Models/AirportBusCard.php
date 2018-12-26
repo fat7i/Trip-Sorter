@@ -27,6 +27,8 @@ class AirportBusCard extends AbstractCard implements CardInterface
      */
     public function display(): string
     {
-        return 'Take the airport bus from '. $this->from .' to '. $this->to .' Airport. No seat assignment.';
+        $str = "Take the airport bus from %s to %s Airport. No seat assignment.";
+
+        return sprintf( $str, $this->from, $this->to);
     }
 }

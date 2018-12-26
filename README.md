@@ -49,6 +49,11 @@ For usage please follow the sample in [src/Sample.php](src/Sample.php).
     
     echo $sorter->display();
 
+## Test Cases
+Test cases in [\test](tests) folder,
+
+Run all tests `php vendor/phpunit/phpunit/phpunit tests`
+
 ## Have a Query?
 Mail me at [bin.fathi.ali@gmail.com](mailto:bin.fathi.ali@gmail.com).
 
